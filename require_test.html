@@ -1,0 +1,25 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <div class="header">
+      <a href="#" id="header1">Header 1</a>
+      <a href="#" id="header2">Header 2</a>
+      <a href="#" id="header3">Header 3</a>
+    </div>
+    <div class="body">
+      <a href="#" id="test1">Test 1</a>
+      <a href="#" id="test2">Test 2</a>
+      <a href="#" id="test3">Test 3</a>
+    </div>
+    <script type="text/javascript" src="./js/lib/requirejs/require-jquery.js"></script>
+    <script type="text/javascript" src="./js/common.config.js"></script>
+
+    <script>
+      requirejs.config({
+        baseUrl: './js/',
+        deps: ['header/header', 'test_page/main']
+      });
+    </script>
+  </body>
+</html>
